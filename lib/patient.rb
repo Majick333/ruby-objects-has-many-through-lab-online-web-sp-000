@@ -19,7 +19,7 @@ class Patient
       appointment.patient == self.name
     end
   end
-  
+
 
 
   def doctors
