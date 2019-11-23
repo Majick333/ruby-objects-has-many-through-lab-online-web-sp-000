@@ -28,7 +28,7 @@ describe 'Patient' do
     end
   end
 
-  =begin
+=begin
   describe '#doctors' do
     it 'has many doctors through appointments' do
       doctor_who = Doctor.new('The Doctor')
@@ -41,5 +41,5 @@ describe 'Patient' do
       expect(hevydevy.doctors).to include(doctor_what)
     end
   end
-  =end
+=end
 end
