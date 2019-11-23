@@ -19,7 +19,7 @@ class Patient
       appointment.patient == self
 binding.pry
     end
-    
+
   end
 
 
