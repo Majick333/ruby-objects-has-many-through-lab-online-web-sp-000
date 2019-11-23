@@ -5,13 +5,20 @@ class Artist
   @@all = []
 
   def initialize(name)
-    @songs = []
     @name = name
     @@all << self
   end
 
+  def self.all
+    @@all
+  end
+
   def songs
-    @songs
+    Song.all.collect{|song| song.artist == self}
+  end
+
+  def genres
+    songs.map {|song| song.genre}
   end
 
   def new_song(name,genre)
