@@ -1,3 +1,4 @@
+require 'pry'
 
 class Patient
 
@@ -16,8 +17,10 @@ class Patient
   def appointments
     Appointment.all.select do |appointment|
       appointment.patient == self
+binding.pry
     end
   end
+
 
   def doctors
     appointments.collect {|appointment| appointment.doctor}
