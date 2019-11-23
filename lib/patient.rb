@@ -19,7 +19,7 @@ class Patient
       appointment.patient == self
     end
   end
-
+binding.pry
 
 
   def doctors
